@@ -6,6 +6,7 @@
 @import "suport.scss";
 @import "popup.scss";
 @import "mobile.scss";
+@import "tabs.scss";
 html{
   box-sizing: border-box;
 }
@@ -821,11 +822,20 @@ body{
 .support{
   min-height: 903px;
 }
+@media (min-width:600px) {
+  .support{
+    margin: 0 auto;
+    width: 74%;
+    padding: 0;
+    min-height: 623px;
+  }
+}
 @media (min-width:1025px) {
   .support{
     margin: 0 auto;
     width: 74%;
     padding: 0;
+    min-height: 623px;
   }
 }
 .support__names{

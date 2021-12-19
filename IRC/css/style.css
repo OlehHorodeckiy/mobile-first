@@ -556,6 +556,12 @@ h6 {
 
 .mobile__link {
   margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  font-weight: 700;
 }
 
 .active {
@@ -566,6 +572,193 @@ h6 {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.tabs {
+  width: 100%;
+  max-width: 1040px;
+}
+
+.tabs__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #303030;
+  margin-bottom: 8px;
+}
+
+.tabs__subtitle {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #404040;
+  margin-bottom: 16px;
+}
+
+/* Стили для списка вкладок */
+
+.tab-header {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Стили для вкладки */
+
+.tab-header__item {
+  margin-right: 16px;
+  cursor: pointer;
+  border-bottom: 1px dashed #2741CF;
+}
+
+/* Стили для активной вкладки */
+
+.tab-header__item.active {
+  width: 106px;
+  height: 33px;
+  background: #273895;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  color: #FFFFFF;
+  border: none;
+}
+
+/* Стиль для списка контейнеров с содержимым вкладок */
+
+.tab-content {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 20px;
+}
+
+/* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+
+.tab-content__item {
+  display: none;
+  padding: 23px 15px 25px 27px;
+}
+
+/* Стили для активного контейнера вкладки */
+
+.tab-content__item.active {
+  display: block;
+}
+
+.application__title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #2741D0;
+  margin-bottom: 4px;
+}
+
+.aplication__heading {
+  font-size: 18px;
+  line-height: 44px;
+  text-align: center;
+  color: #C9C9C9;
+  margin-bottom: -1px;
+}
+
+.aplication__caption {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #737373;
+  white-space: pre-line;
+}
+
+.list {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #404040;
+  margin-bottom: 12px;
+}
+
+.list__content {
+  font-size: 12px;
+  line-height: 20px;
+  color: #404040;
+  margin-bottom: 8px;
+}
+
+.link-prise {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 40px;
+  color: #2741D0;
+  position: relative;
+}
+
+.row-link {
+  position: absolute;
+  top: -1px;
+  right: -26px;
+}
+
+.aplication__button {
+  width: 220px;
+  height: 50px;
+  background: #273895;
+  border-radius: 15px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.list__left .list__content {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #404040;
+}
+
+.list__left .list__content .triagle {
+  margin-right: 17px;
+}
+
+.list__right .list__content {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  color: #404040;
+  white-space: pre-line;
+}
+
+.list__right .list__content .triagle {
+  margin-right: 10px;
+}
+
+.more-detalist {
+  text-align: center;
+}
+
+.more-detalist .link-prise {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 40px;
+  color: #2741D0;
+}
+
+.more-detalist .link-prise .row-link {
+  width: 13px;
+  height: 12px;
+}
+
+.aplication__but {
+  text-align: center;
 }
 
 html {
@@ -1140,6 +1333,13 @@ body {
   .item-help__text2 {
     margin: 0 20px;
   }
+
+  .support {
+    margin: 0 auto;
+    width: 74%;
+    padding: 0;
+    min-height: 623px;
+  }
 }
 
 @media (min-width: 700px) {
@@ -1153,6 +1353,11 @@ body {
     text-align: right;
     color: #303030;
     margin-top: 4px;
+  }
+
+  .aplication__list {
+    display: flex;
+    justify-content: center;
   }
 
   .header__number-link {
@@ -1490,6 +1695,40 @@ body {
     margin-right: 76px;
   }
 
+  .application__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #2741D0;
+  }
+
+  .aplication__heading {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #C9C9C9;
+    margin-bottom: 16px;
+  }
+
+  .aplication__caption {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #737373;
+    white-space: normal;
+  }
+
+  .list {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #404040;
+  }
+
   .container {
     padding: 0 80px;
     margin: 0 auto;
@@ -1820,6 +2059,7 @@ body {
     margin: 0 auto;
     width: 74%;
     padding: 0;
+    min-height: 623px;
   }
 
   .support__names {

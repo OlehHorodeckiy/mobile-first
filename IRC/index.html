@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <title>IRC</title>
+    <link rel="stylesheet" href="scss/tabs.scss">
 </head>
 <body>
  <div class="mobile-menu">
@@ -244,14 +245,63 @@
                     <button type="submit">Получить доступ</button>
                 </div>
             </form>
-
         </div>
-
-
-
     </div>
 </div>
+ <div class="tabs container">
+     <div class="tabs__title">Тарифы</div>
+     <div class="tabs__subtitle">для всех и для каждого</div>
+     <ul class="tab-header">
+         <li class="tab-header__item js-tab-trigger active" data-tab="1">1 месяц</li>
+         <li class="tab-header__item js-tab-trigger" data-tab="2">Год</li>
+     </ul>
 
+     <ul class="tab-content">
+         <li class="tab-content__item js-tab-content active" data-tab="1">
+             <div class="tariff__application">
+                 <div class="application__title">Легкий старт</div>
+                 <div class="aplication__heading">Бесплатно</div>
+                 <div class="aplication__caption">Для ознакомления с сервисом и его возможностями</div>
+                 <div class="list">Для Вас доступно</div>
+                 <div class="aplication__list">
+
+                     <div class="list__left">
+                         <div class="list__content"><img class="triagle"src="./img/triagle.png" alt="">Конструктор документов﻿
+                         </div>
+                         <div class="list__content"><img class="triagle"src="./img/triagle.png" alt="">Личный кабинет (базовая версия)</div>
+                     </div>
+                     <div class="list__right">
+                         <div class="list__content"><img class="triagle"src="./img/triagle.png" alt="">Sirius</div>
+                         <div class="list__content"><img class="triagle"src="./img/triagle.png" alt="">1 устная первичная консультация
+                             по правовому запросу</div>
+                     </div>
+
+                 </div>
+                 <div class="more-detalist"> <a class="link-prise" href="#">Подробнее в личном кабинете <img class="row-link" src="./img/left-arrow (10) 1.png" alt=""></a></div>
+                 <div class="aplication__but"><button class="aplication__button">Оставить заявку</button></div>
+
+             </div>
+
+         </li>
+         <li class="tab-content__item js-tab-content" data-tab="2">
+             <div class="item-prices">
+                 <div class="item-prices__title">Стандарт</div>
+                 <div class="item-prices__captain">Для физических лиц</div>
+                 <div class="item-prices__prise">$28/месяц</div>
+                 <div class="item-prices__list">Для Вас доступно</div>
+                 <div class="item-prices__text"><img  class="triagle"src="./img/triagle.png" alt="">Доступ к первому юридическому искусственному интеллекту Sirius — 24/7 </div>
+                 <div class="item-prices__text"><img  class="triagle"src="./img/triagle.png" alt="">Доступ к первому юридическому искусственному интеллекту Sirius — 24/7</div>
+                 <div class="item-prices__text"><img  class="triagle"src="./img/triagle.png" alt="">Регистрация компаний и открытия счетов в РФ</div>
+                 <div class="item-prices__text"><img  class="triagle"src="./img/triagle.png" alt="">Сопровождение сделок любой сложности</div>
+                 <div class="item-prices__text"><img  class="triagle"src="./img/triagle.png" alt="">Устные и письменные консультации
+                     юристов 24/7</div>
+                 <div class="item-prices__link"><a class="link-prise" href="#">Подробнее в личном кабинете <img class="row-link" src="./img/left-arrow (10) 1.png" alt=""></a></div>
+                 <div class="item-prices__button"><button class="button-prise">Оставить заявку</button></div>
+             </div>
+         </li>
+
+     </ul>
+ </div>
     <script src="js/main.min.js"></script>
 <script src="/assets/js/jquery-3.5.1.min.js"></script>
 </body>
